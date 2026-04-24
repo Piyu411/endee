@@ -9,6 +9,47 @@
 <p align="center">
     <b>High-performance open-source vector database for AI search, RAG, semantic search, and hybrid retrieval.</b>
 </p>
+About Project
+# 🎖️ Mission Command: Local Defense Assistant
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)
+![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black.svg)
+![Status](https://img.shields.io/badge/Status-Operational-brightgreen.svg)
+
+**Mission Command** is a high-speed, 100% offline Retrieval-Augmented Generation (RAG) system built specifically to help aspirants navigate the complex eligibility and syllabus requirements for the Indian Military Academy (IMA) and Combined Defence Services (CDS) examinations.
+
+Built as part of the **Endee.io Recruitment Drive**, this project demonstrates how to deploy a privacy-first AI architecture that requires zero external API keys and keeps all tactical data strictly on the local machine.
+
+---
+
+## 🚀 Key Features
+
+* **100% Offline Architecture:** Powered entirely by local models. No internet connection is required for inference, ensuring absolute data privacy.
+* **Universal Intelligence Loader:** Dynamically ingest any number of PDF documents (notifications, syllabi) dropped into the `data/` folder.
+* **High-Speed Tactical Retrieval:** Utilizes **FAISS** (Facebook AI Similarity Search) and the **Endee Vector Database** for sub-millisecond semantic search.
+* **Persistent Memory:** Employs Streamlit caching and local index saving to ensure rapid boot times after the initial vectorization.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** Streamlit
+* **Local Engine:** Ollama (Llama 3.2)
+* **Embeddings:** HuggingFace (`all-MiniLM-L6-v2`)
+* **Vector Store:** Endee Vector DB & FAISS-CPU
+* **Orchestration:** LangChain
+
+---
+
+## ⚙️ Installation & Deployment
+
+To deploy this tactical assistant on your local machine, follow these steps:
+
+### 1. Initialize the Local Brain (Ollama)
+Download and install [Ollama](https://ollama.com/). Then, open your terminal and pull the required lightweight model:
+```bash
+ollama run llama3.2
 
 <p align="center">
     <a href="./docs/getting-started.md"><img src="https://img.shields.io/badge/Quick_Start-Local_Setup-success?style=flat-square" alt="Quick Start"></a>
