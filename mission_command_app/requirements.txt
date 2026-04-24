@@ -1,0 +1,8 @@
+streamlit
+langchain-endee
+endee
+endee-model
+langchain-huggingface
+sentence-transformers
+google-generativeai
+langchain-core
